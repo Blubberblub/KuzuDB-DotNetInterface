@@ -2,7 +2,9 @@
 Public Class frmMain
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles Me.Load
 
-        Dim db As kuzu_database = kuzu_database_init("test", 0)
+        Dim config As kuzu_system_config = kuzu_default_system_config()
+
+        Dim db As kuzu_database = kuzu_database_init("test", config)
         Dim conn As kuzu_connection = kuzu_connection_init(db)
 
         Dim result As kuzu_query_result = kuzu_connection_query(conn, "CREATE NODE TABLE User(name STRING, age INT64, PRIMARY KEY (name))")
