@@ -37,3 +37,9 @@ wrapperlib/build/**
 #
 
 KuzuDB-net/KuzuDB-Net/WrapperFiles/**
+
+#
+# copied dll files
+#
+KuzuDB-net/KuzuDB-Net/kuzu_shared.dll
+KuzuDB-net/KuzuDB-Net/kuzunet.dll

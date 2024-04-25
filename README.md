@@ -15,7 +15,7 @@ This project uses SWIG (www.swig.org) to automatically generate C# wrapper code 
 
 1. Get newest version of Kuzu C/C++ libs (see last tested versions above)
 - Download the c/c++ windows lib from https://github.com/kuzudb/kuzu/releases/
-- put the files in KuzuFiles folder
+- put the files(.h, .dll, .lib, etc.) in KuzuFiles folder
 
 2. Use SWIG for generating class files and wrapper
 - Install swig (see last tested versions above).
