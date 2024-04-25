@@ -1,0 +1,8 @@
+#
+# Kuzu lib files
+#
+
+KuzuFiles/*.h
+KuzuFiles/*.hpp
+KuzuFiles/*.dll
+KuzuFiles/*.lib
