@@ -24,3 +24,9 @@ wrapperlib/build/**
 #
 
 **/bin/*
+
+#
+# wrapper files in project
+#
+
+KuzuDB-net/KuzuDB-Net/WrapperFiles/**
