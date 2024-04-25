@@ -3,15 +3,30 @@
 
 This project uses SWIG (www.swig.org) to automatically generate C# wrapper code to operate over the Kuzu database .lib file.
 
+# Folders structure
+- KuzuDB-Net
+    - Contains a C# project to create the DLL
+    - Contains a VB.Net project to test the DLL
+
+- KuzuFiles
+    - Kuzu files (.h, .dll, .lib, etc.) should be added here
+    - the generated_classes subfolder will hold the generated C# classes
+
+- SWIG-Input File
+    - Contains the .i (input file) used in the SWIG command to generate the C# wrapper files
+
+- wrapperlib
+    - Contains the files to build kuzunet.dll
+
 # Tested on
 - Windows 11
-- Visual Studio Community 22 with "Desktop Development with C++" package
+- Visual Studio Community 22 with "Desktop Development with C++" package and .NET Framework 4.8
 - Kuzu v.0.3.2
 - SWIG version 4.2.1
 - cmake 3.29.2
 - ninja 1.12.0
 
-# How this works
+# How to make this work
 
 1. Get newest version of Kuzu C/C++ libs (see last tested versions above)
 - Download the c/c++ windows lib from https://github.com/kuzudb/kuzu/releases/
@@ -39,39 +54,25 @@ ninja
 
 3. Test in Demo Project
 In the KuzuDB-net folder is a KuzuDB-TestAndExplorer.sln file. It includes tow things
-- 
+- The csharp project to build the datbase .dll
+- A small VB project to test the outcome
 
-- open 
-- add kuzu_shared.dll (from KuzuFiles) and kuzunet.dll (from wrapperlib/build) to project
-TODO: add files and their origin locations that have to be added to project
+For testing you need to:
+- open the sln file
+- add all the files from KuzuFiles/generated_classes to the projects WrapperFiles folder
+- add kuzu_shared.dll (from KuzuFiles) and kuzunet.dll (from wrapperlib/build) to the KuzuNet-DB project
+- make sure the KuzuDB-TestAndExplorer project has the KuzuDB-Net project as reference (if not add it)
+- build the solution
 
 
-# Folders Are
-- KuzuDB-Net
-    - Contains a C# project to create the DLL
-        - Wrapper files output from SWIG are included in this project, to generate the DLL.
-    - Contains a VB.Net project to test the DLL
-
-- KuzuFiles
-    - Contains copies of the Kuzu files (.h, .hpp, .lib)
-
-- SWIG-Input File
-    - Contains the .i (input file) used in the SWIG command to generate the C# wrapper files
-
-# Precompiled DLLs Are In:
-- DotNetInterface/KuzuDB-net/KuzuDB-Net/bin/Debug/
-
-# Test Program is in
-- KuzuDB-DotNetInterface/KuzuDB-net/KuzuDB-TestAndExplore
-
-# Collaboration Welcome
-Want to chip in? Sing out to contribute to this project.
-
-# Usage (VB.Net)
-Imports kuzunet
+# General Usage (VB.Net)
 
 Put the following files in your .exe directory:
 kuzu_shared.dll
 KuzuDB.dll
 kuzunet.dll
 libkuzu.lib
+
+```VB
+Imports kuzunet
+```
