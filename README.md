@@ -64,7 +64,7 @@ For testing, you need to:
 - open the sln file
 - add all the files from KuzuFiles/generated_classes to the projects WrapperFiles folder
 - add kuzu_shared.dll (from KuzuFiles) and kuzunet.dll (from wrapperlib/build) to the KuzuNet-DB project
-- make sure the KuzuDB-TestAndExplorer project has the KuzuDB-Net project as reference (if not add it)
+- make sure the KuzuDB-TestAndExplorer project has the KuzuDB-Net project(not the .dll !!!) as reference (if not add it)
 - build the solution
 
 # General Usage (VB.Net)
