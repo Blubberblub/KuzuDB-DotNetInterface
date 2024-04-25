@@ -8,10 +8,11 @@ KuzuFiles/*.dll
 KuzuFiles/*.lib
 
 #
-# SWIG generated classes (have to inserted manually)
+# SWIG generated classes (have to be generated)
 #
 
 KuzuFiles/generated_classes/**
+wrapperlib/kuzu_wrap.cpp
 
 #
 # Cmake and build files
