@@ -43,7 +43,7 @@ The code in this repo was tested with the following setup:
 swig -c++ -csharp -IKuzuFiles/ -outdir "KuzuFiles/generated_classes/" -o wrapperlib/kuzu_wrap.cpp SWIG-InputFile/kuzu.i
 ```
 
-## 2. Build kuzunet.dll
+## 3. Build kuzunet.dll
 - check that you have Visual Studio with C++ dev package, as well as cmake and kuzu as described above
 - build kuzunet.dll using cmake and ninja in the wrapperlib folder with following commands:
 
@@ -55,7 +55,7 @@ cmake -G Ninja .. -DCMAKE_BUILD_TYPE=Release
 ninja
 ```
 
-## 3. Test in Demo Project
+## 4. Test in Demo Project
 In the KuzuDB-net folder is a KuzuDB-TestAndExplorer.sln file. It includes two things:
 - The C# project to build the datbase .dll
 - A small VB project to test the outcome
