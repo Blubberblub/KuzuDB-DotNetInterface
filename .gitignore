@@ -6,3 +6,21 @@ KuzuFiles/*.h
 KuzuFiles/*.hpp
 KuzuFiles/*.dll
 KuzuFiles/*.lib
+
+#
+# Cmake files
+#
+
+wrapperlib/build/**
+
+#
+# Visual studio files
+#
+
+**/.vs/*
+
+#
+# binary files
+#
+
+**/bin/*
