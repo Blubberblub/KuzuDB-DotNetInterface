@@ -1,5 +1,5 @@
 #
-# Kuzu lib files
+# Kuzu lib files (have to inserted manually)
 #
 
 KuzuFiles/*.h
@@ -8,7 +8,13 @@ KuzuFiles/*.dll
 KuzuFiles/*.lib
 
 #
-# Cmake files
+# SWIG generated classes (have to inserted manually)
+#
+
+KuzuFiles/generated_classes/**
+
+#
+# Cmake and build files
 #
 
 wrapperlib/build/**
