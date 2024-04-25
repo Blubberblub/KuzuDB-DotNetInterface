@@ -3,7 +3,7 @@
 
 This project uses SWIG (www.swig.org) to automatically generate C# wrapper code to operate over the Kuzu database .lib file.
 
-# Folders structure
+# Folder structure
 
 - KuzuFiles
     - Kuzu files (.h, .dll, .lib, etc.) should be added here (see: How to make this work)
@@ -31,7 +31,7 @@ The code in this repo was tested with the following setup:
 
 # How to make this work
 
-## 1. Get newest version of Kuzu C/C++ libs (see last tested versions above)
+## 1. Get the newest version of Kuzu C/C++ libs (see last tested versions above)
 - Download the c/c++ windows lib from https://github.com/kuzudb/kuzu/releases/
 - put the files(.h, .dll, .lib, etc.) in KuzuFiles folder
 
@@ -60,7 +60,7 @@ In the KuzuDB-net folder is a KuzuDB-TestAndExplorer.sln file. It includes two t
 - The C# project to build the datbase .dll
 - A small VB project to test the outcome
 
-For testing you need to:
+For testing, you need to:
 - open the sln file
 - add all the files from KuzuFiles/generated_classes to the projects WrapperFiles folder
 - add kuzu_shared.dll (from KuzuFiles) and kuzunet.dll (from wrapperlib/build) to the KuzuNet-DB project
