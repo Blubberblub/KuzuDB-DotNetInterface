@@ -37,7 +37,12 @@ cmake -G Ninja .. -DCMAKE_BUILD_TYPE=Release
 ninja
 ```
 
-3. Use files in project
+3. Test in Demo Project
+In the KuzuDB-net folder is a KuzuDB-TestAndExplorer.sln file. It includes tow things
+- 
+
+- open 
+- add kuzu_shared.dll (from KuzuFiles) and kuzunet.dll (from wrapperlib/build) to project
 TODO: add files and their origin locations that have to be added to project
 
 

@@ -31,6 +31,7 @@ wrapperlib/build/**
 #
 
 **/bin/*
+**/obj/*
 
 #
 # wrapper files in project
