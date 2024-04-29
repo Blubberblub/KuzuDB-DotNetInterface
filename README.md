@@ -1,13 +1,13 @@
 # KuzuDB-net
 .NET Wrapper for KuzuDB
 
-This project contains the necessary library files to use the Kùzu graph database(https://kuzudb.com/) in .NET applications.
+This project contains the necessary library files to use the Kùzu graph database (https://kuzudb.com/) in .NET applications.
 
 You can either download the prebuilt libraries (see: Get the prebuilt libaries) or build them yourself. The project uses SWIG (www.swig.org) to automatically generate C# wrapper code and Visual Studio to build the library.
 
 # Get the prebuilt libaries
 
-The prebuilt libraries will be published in the releases of this repo. For infos on the usage look into the General Usage section or consult the C# and VB example projects in the KuzuDB-Net folder.
+The prebuilt libraries will be published in the releases of this repo. For information on the usage, look into the General Usage section or consult the C# and VB example projects in the KuzuDB-Net folder.
 
 # Folder structure
 
@@ -17,7 +17,7 @@ The prebuilt libraries will be published in the releases of this repo. For infos
     - Contains an example C# project to test the DLL
 
 - KuzuFiles
-    - Kuzu files (.h, .dll, .lib, etc.) should be added here (see: Building the libaries yourself)
+    - Kuzu files (.h, .dll, .lib, etc.) should be added here (see: Building the libraries yourself)
     - the generated_classes subfolder will hold the SWIG generated C# wrapper classes
 
 - SWIG-Input File
@@ -26,7 +26,7 @@ The prebuilt libraries will be published in the releases of this repo. For infos
 - wrapperlib
     - Will contain the needed files to build kuzunet.dll
 
-# Building the libaries yourself
+# Building the libraries yourself
 
 The build process with the code from this repo was last tested with the following setup:
 - Windows 11
@@ -36,7 +36,7 @@ The build process with the code from this repo was last tested with the followin
 - cmake 3.29.2
 - ninja 1.12.0
 
-Use the following steps to build your own version of the libary files:
+Use the following steps to build your own version of the library files:
 
 ## 1. Get the newest version of Kuzu C/C++ libs (see last tested versions above)
 - Download the c/c++ windows lib from https://github.com/kuzudb/kuzu/releases/
@@ -73,14 +73,14 @@ For building the libary you need the KuzuDB-Net C# project
 - add all the files from KuzuFiles/generated_classes to the projects WrapperFiles folder
 - add kuzu_shared.dll (from KuzuFiles) and kuzunet.dll (from wrapperlib/build) to the KuzuNet-DB project
 
-For testing your libary you need to:
-- open the sln file
+For testing your library you need to:
+- open the .sln file
 - make sure the KuzuDB-TestAndExplorer project has the KuzuDB-Net project as reference
 - build the solution
 
 # General Usage
 
-To you use the library in your .NET project you have two options:
+To you use the library in your .NET project, you have two options:
 
 ## Option 1: Copy the downloaded or built lib files
 
@@ -107,4 +107,3 @@ Visual Basic Usage
 Imports kuzunet
 ```
 Check the examples in KuzuDB-TestAndExplorer.sln for minimal VB and C# examples.
-
