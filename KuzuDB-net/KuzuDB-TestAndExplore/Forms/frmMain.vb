@@ -1,4 +1,7 @@
-﻿Imports kuzunet
+﻿'this simple app demonstrates the usage of Kuzu v.0.3.2
+
+Imports kuzunet
+
 Public Class frmMain
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles Me.Load
 

@@ -1,5 +1,5 @@
 #
-# Kuzu lib files (have to inserted manually)
+# Kuzu lib files (have to be inserted manually)
 #
 
 KuzuFiles/*.h
@@ -27,7 +27,7 @@ wrapperlib/build/**
 **/.vs/*
 
 #
-# binary files
+# VS build files
 #
 
 **/bin/*
