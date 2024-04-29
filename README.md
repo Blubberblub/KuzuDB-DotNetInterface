@@ -1,15 +1,20 @@
 # KuzuDB-net
 .NET Wrapper for KuzuDB
 
-This project contains the necessary library files to use the Kùzu graph database in .NET applications.
+This project contains the necessary library files to use the Kùzu graph database(https://kuzudb.com/) in .NET applications.
 
 You can either download the prebuilt libraries (see: Get the prebuilt libaries) or build them yourself. The project uses SWIG (www.swig.org) to automatically generate C# wrapper code and Visual Studio to build the library.
 
 # Get the prebuilt libaries
 
-The prebuilt libraries will be published in the releases of this repo. For usage look into the General Usage section or into the example projects provided in KuzuDB-Net folder.
+The prebuilt libraries will be published in the releases of this repo. For infos on the usage look into the General Usage section or consult the C# and VB example projects in the KuzuDB-Net folder.
 
 # Folder structure
+
+- KuzuDB-Net
+    - Contains a C# project to create the library DLL
+    - Contains an example VB.Net project to test the DLL
+    - Contains an example C# project to test the DLL
 
 - KuzuFiles
     - Kuzu files (.h, .dll, .lib, etc.) should be added here (see: Building the libaries yourself)
@@ -19,12 +24,7 @@ The prebuilt libraries will be published in the releases of this repo. For usage
     - Contains the SWIG interface file for SWIG to generate the C# wrapper files and kuzu_wrap.cpp
 
 - wrapperlib
-    - Will contain the files to build kuzunet.dll
-
-- KuzuDB-Net
-    - Contains a C# project to create the DLL
-    - Contains an example VB.Net project to test the DLL
-    - Contains an example C# project to test the DLL
+    - Will contain the needed files to build kuzunet.dll
 
 # Building the libaries yourself
 
@@ -78,11 +78,11 @@ For testing your libary you need to:
 - make sure the KuzuDB-TestAndExplorer project has the KuzuDB-Net project as reference
 - build the solution
 
-# General Usage (VB.Net)
+# General Usage
 
 To you use the library in your .NET project you have two options:
 
-## 1. Copy the downloaded or built lib files
+## Option 1: Copy the downloaded or built lib files
 
 Add the following files to your application directory (where your .exe file is):
 kuzu_shared.dll
@@ -91,7 +91,7 @@ kuzunet.dll
 
 An add KuzuDB.dll as reference to your project.
 
-## 2. Add the lib building project as dependency
+## Option 2: Add the lib building project as dependency
 
 Use Visual Studio and add KuzuDB-Net project as project reference to your project (see example projects in KuzuDB-TestAndExplorer.sln).
 
