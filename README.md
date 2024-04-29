@@ -39,6 +39,7 @@ The build process with the code from this repo was last tested with the followin
 Use the following steps to build your own version of the library files:
 
 ## 1. Get the newest version of Kuzu C/C++ libs (see last tested versions above)
+- create KuzuFiles dir and generated_classes inside of it
 - Download the c/c++ windows lib from https://github.com/kuzudb/kuzu/releases/
 - put the files(.h, .dll, .lib, etc.) in KuzuFiles folder
 
